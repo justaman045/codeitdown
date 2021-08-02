@@ -1,0 +1,223 @@
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.col6 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.collg3 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.mt3 {
+  margin-top: 1rem !important;
+}
+.py4 {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 "FontAwesome";
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.facutlery {
+  &:before {
+    content: "";
+  }
+}
+.fafemale {
+  &:before {
+    content: "";
+  }
+}
+.fapiechart {
+  &:before {
+    content: "";
+  }
+}
+.fabath {
+  &:before {
+    content: "";
+  }
+}
+.w3lhomeblock1 {
+  .area-box {
+    background-color: var(--bg-color);
+    box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    border-radius: var(--border-radius-full);
+    text-align: center;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    span.fa {
+      color: var(--primary-color);
+      font-size: 26px;
+      margin-bottom: 15px;
+    }
+    &:hover {
+      transform: translateY(-0.25rem);
+      box-shadow: rgba(46, 41, 51, 0.08) 0px 2px 4px,
+        rgba(71, 63, 79, 0.16) 0px 5px 10px;
+      transition: 0.3s ease;
+      -webkit-transition: 0.3s ease;
+      -moz-transition: 0.3s ease;
+      -ms-transition: 0.3s ease;
+      -o-transition: 0.3s ease;
+    }
+  }
+  h4 {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--font-color);
+    text-decoration: none;
+    font-family: "Hind", sans-serif;
+    letter-spacing: -0.5px;
+  }
+  .gridsfeature {
+    &:hover {
+      h4 {
+        color: var(--primary-color);
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+    max-width: 540px;
+  }
+  .pysm5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    max-width: 720px;
+  }
+  .mtmd4 {
+    margin-top: 1.5rem !important;
+  }
+  .pymd4 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    max-width: 960px;
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .collg3 {
+    flex: 0 0 50%;
+    max-width: 25% !important;
+  }
+  .mtlg0 {
+    margin-top: 0 !important;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    max-width: 1140px;
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media (max-width: 568px) {
+  .w3lhomeblock1 {
+    .areabox {
+      h4 {
+        white-space: nowrap;
+        font-size: 18px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    .gridsareahny.maincontwthreefea.row {
+      padding: 0 8px;
+      .col6 {
+        padding: 0 6px;
+      }
+    }
+  }
+}
+.sectiontitleleft {
+  font-size: 26px;
+  line-height: 36px;
+  font-weight: 700;
+}
+.mt2 {
+  margin-top: 0.5rem;
+}
+.mb4 {
+  margin-bottom: 1.5rem !important;
+}
+.areaHover {
+  background-color: #fff;
+  background-color: var(--bg-color);
+  box-shadow: 1px 1px 5px 0 rgb(1 1 1 / 5%);
+  border: 1px solid transparent;
+  border: 1px solid var(--border-color);
+  padding: 20px;
+  border-radius: 15px;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+
+  &:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: rgba(46, 41, 51, 0.08) 0px 2px 4px,
+      rgba(71, 63, 79, 0.16) 0px 5px 10px;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+  }
+}

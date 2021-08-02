@@ -1,0 +1,99 @@
+.aboutContent {
+  padding: 30px;
+  background-color: #131617 !important;
+  box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
+  border-radius: 15px;
+}
+
+@media (max-width: 321px) and (min-width: 315px) {
+  // .aboutContent {
+  //   width: 18em !important;
+  // }
+}
+
+@media (max-width: 380px) and (min-width: 360px) {
+  .aboutContent {
+    width: 22em !important;
+  }
+}
+
+@media (max-width: 500px) and (min-width: 400px) {
+  .aboutContent {
+    width: 25em !important;
+  }
+}
+
+@media (max-width: 800px) and (min-width: 750px) {
+  .aboutContent {
+    width: 44em !important;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 1000px) {
+  .aboutContent {
+    width: 54em !important;
+    margin-left: 2em;
+  }
+}
+
+@media (max-width: 1800px) and (min-width: 1500px) {
+  .aboutContent {
+    width: 74em !important;
+  }
+  .CustomImage {
+    margin-left: 3em;
+    width: 93em;
+    height: 60em !important;
+  }
+}
+
+@media (max-width: 1400px) and (min-width: 1300px) {
+  .aboutContent {
+    width: 74em !important;
+  }
+  .CustomImage {
+    margin-left: 3em;
+    width: 79em;
+  }
+}
+
+@media (max-width: 2600px) and (min-width: 2000px) {
+  .aboutContent {
+    width: 80em !important;
+    margin-left: -5em;
+  }
+
+  .CustomImage {
+    margin-left: 47em;
+  }
+}
+
+.linebreak {
+  white-space: pre-wrap;
+
+  h1 {
+    font-size: 3em;
+    font-family: "Benne", serif;
+  }
+  p {
+    font-family: "Baloo Tammudu 2", cursive;
+    font-size: 20px;
+    line-height: 1.5em;
+  }
+  li {
+    font-family: "Baloo Tammudu 2", cursive;
+    font-size: 20px;
+  }
+}
+
+.mt4 {
+  margin-top: 6em !important;
+}
+
+.aboutContent {
+  margin-bottom: 2em;
+}
+
+.marginLeft2{
+  margin-left: 2em !important;
+}
