@@ -8,7 +8,7 @@ export default function GetSingleComments({ CommentorName, date, time, CommentMe
             <div className={PostStyle.media}>
                 <a className={PostStyle.commentimg} href={''}>
                     {/* <img src="https://img.icons8.com/plasticine/50/000000/user-male-circle.png" className={PostStyle.imgresponsive} width="100px" alt="placeholder" /> */}
-                    <Image src="https://img.icons8.com/plasticine/50/000000/user-male-circle.png" className={PostStyle.imgresponsive} layout={`fill`} alt="placeholder" />
+                    <Image src="https://img.icons8.com/plasticine/50/000000/user-male-circle.png" className={PostStyle.imgresponsive} width={`128`} height={`128`} alt="placeholder" />
                     {/* <Image src="https://img.icons8.com/plasticine/50/000000/user-male-circle.png" className={PostStyle.imgresponsive} width={`100px`} alt="placeholder" /> */}
                 </a>
                 <div className={cx(PostStyle.mediabody, PostStyle.commentsgridright)}>

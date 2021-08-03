@@ -52,6 +52,7 @@ export const getStaticProps = async () => {
       popularPosts,
       randomCateogary,
       recentBlogs,
-    }
+    },
+    revalidate: 60
   }
 }

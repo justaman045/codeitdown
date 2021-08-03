@@ -8,14 +8,14 @@ import { useRouter } from 'next/router';
 
 
 export const getStaticPaths = async () => {
-    const getTheCateogariesRes = await fetch(`${fakeLinks.cateogary}`)
-    const getTheCateogaries = await getTheCateogariesRes.json()
+    // const getTheCateogariesRes = await fetch(`${fakeLinks.cateogary}`)
+    // const getTheCateogaries = await getTheCateogariesRes.json()
 
-    const Cateogaries = getTheCateogaries.map(article => article.Cateogary)
-    const paths = Cateogaries.map(cateogary => ({ params: { cateogary: cateogary.toString() } }))
+    // const Cateogaries = getTheCateogaries.map(article => article.Cateogary)
+    // const paths = Cateogaries.map(cateogary => ({ params: { cateogary: cateogary.toString() } }))
 
     return {
-        paths,
+        paths: [],
         fallback: true
     }
 }
@@ -29,7 +29,7 @@ export const getStaticProps = async (context) => {
         props: {
             getTheCateogaries
         },
-        revalidate: 30,
+        revalidate: 1,
     }
 }
 

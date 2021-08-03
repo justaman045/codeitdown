@@ -11,7 +11,7 @@ export default function ClientSideCards({ PostName, image, PostHead, PostContent
                         <a href={`/posts/${slug}`}>
                             {/* <img className="cardimgbottom dblock radiusimagefull" src={image} style={{ height: `15em` }} alt="Card cap" /> */}
                             {/* <Image className="cardimgbottom dblock radiusimagefull" src={image} height={`15em`} alt="Card cap" /> */}
-                            <Image className="cardimgbottom dblock radiusimagefull" src={image} layout={`fill`} alt="Card cap" />
+                            <Image className="cardimgbottom dblock radiusimagefull" src={image} height={`240`} width={`370`} alt="Card cap" />
                         </a>
                     </div>
                     <div className="cardbody blogdetails">
@@ -20,7 +20,7 @@ export default function ClientSideCards({ PostName, image, PostHead, PostContent
                         {`${PostContent.substring(0, 200)}...`}
                         <div className="author alignitemscenter mt3 mb1">
                             {/* <img src={data.ownerImage} alt='' className="imgfluid roundedcircle" /> */}
-                            <Image src={data.ownerImage} layout={`fill`} className="imgfluid roundedcircle" alt="Owner Image" />
+                            <Image src={data.ownerImage} width={`63`} height={`50`} className="imgfluid roundedcircle" alt="Owner Image" />
                             <ul className="blogmeta">
                                 <li>
                                     <a href={data.portfolioLink}>{data.ownerName}</a>

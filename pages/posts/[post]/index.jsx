@@ -83,7 +83,7 @@ export default function index({ articles, listcomment }) {
                             </div>
 
 
-                            {articles.id && <CommentControl key={articles.id} listComments={listcomment} id={articles.id} cateogary={articles.Cateogary} PostHead={articles.Headline} hashtag1={articles.Hashtag} />}
+                            {articles.id && <CommentControl key={articles.id} slug={articles.slug} listComments={listcomment} id={articles.id} cateogary={articles.Cateogary} PostHead={articles.Headline} hashtag1={articles.Hashtag} />}
 
 
 
@@ -96,17 +96,17 @@ export default function index({ articles, listcomment }) {
 }
 
 export const getStaticPaths = async () => {
-    const res = await fetch(fakeLinks.allBlogPost)
-    const articles = await res.json()
+    // const res = await fetch(fakeLinks.allBlogPost)
+    // const articles = await res.json()
 
-    const paths = articles.map(post => {
-        return {
-            params: { post: post.slug.toString() }
-        }
-    })
+    // const paths = articles.map(post => {
+    //     return {
+    //         params: { post: post.slug.toString() }
+    //     }
+    // })
 
     return {
-        paths,
+        paths: [],
         fallback: true
     }
 }
@@ -128,9 +128,9 @@ export const getStaticProps = async (context) => {
 
     return {
         props: {
-            articles,
-            listcomment,
+            articles: articles,
+            listcomment: listcomment
         },
-        revalidate: 1,
+        revalidate: 60
     }
 }

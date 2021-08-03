@@ -6,7 +6,7 @@ import cx from 'classnames'
 import PostStyle from '../../../styles/PostStyle.module.scss'
 
 
-export default function CommentSubmitForm({ idArticle, cateogary, PostHead, hashtag }) {
+export default function CommentSubmitForm({ idArticle, cateogary, slug, PostHead, hashtag }) {
 
     let email = undefined;
     let message = undefined;
@@ -17,10 +17,14 @@ export default function CommentSubmitForm({ idArticle, cateogary, PostHead, hash
 
     function handleClick() {
         if (validator.isEmail(email) && message !== undefined) {
-            UseFetchPost(fakeLinks.commentaPost, `{"email": "${email}", "message": "${message}", "name": "${CommentorName}", "BlogHeadlineID": "${idArticle}", "BlogHeadline": "${PostHead}", "cateogary": "${cateogary}", "hashtag": "${String(hashtag)}"}`)
+            UseFetchPost(fakeLinks.commentaPost, `{"email": "${email}", "message": "${message}", "name": "${CommentorName}", "BlogHeadlineID": "${idArticle}", "BlogHeadline": "${PostHead}", "slug": "${slug}", "cateogary": "${cateogary}", "hashtag": "${String(hashtag)}"}`)
             document.getElementById('commentForm').style.display = 'none'
             setValue('Thank you for Your Value-able Comment on my Article.')
-            setCommentMSG('You can Refresh the page if you want to see your comment.')
+            let valueSeconds = 60
+            setTimeout(()=>{
+                setCommentMSG(`You will be able to see your comment after ${valueSeconds} seconds`)
+                valueSeconds-1;
+            })
         }
     }
 

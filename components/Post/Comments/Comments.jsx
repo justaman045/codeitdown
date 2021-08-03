@@ -3,7 +3,7 @@ import CommentSubmitForm from './Comment Submit Form'
 import GetSingleComments from './Single Comment';
 
 
-export default function CommentControl({ id, cateogary, PostHead, hashtag1, listComments }) {
+export default function CommentControl({ id, slug, cateogary, PostHead, hashtag1, listComments }) {
     return (
         <div className={PostStyle.row}>
             <div className={PostStyle.collg8}>
@@ -18,7 +18,7 @@ export default function CommentControl({ id, cateogary, PostHead, hashtag1, list
                     </div>
                 </div>
 
-                {id && <CommentSubmitForm idArticle={id} cateogary={cateogary} PostHead={PostHead} hashtag={hashtag1} />}
+                {id && <CommentSubmitForm idArticle={id} slug={slug} cateogary={cateogary} PostHead={PostHead} hashtag={hashtag1} />}
 
             </div>
         </div>
