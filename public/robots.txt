@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://codeitdown.vercel.app/sitemap.xml
