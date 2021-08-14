@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export default function PostBanner({ Cateogary, Headline, Content, image, slug }) {
+    console.log(slug);
     return (
         <div className={BannerStyle.item}>
             <div className={cx(BannerStyle.row, BannerStyle.sliderinfo)}>
@@ -20,7 +21,7 @@ export default function PostBanner({ Cateogary, Headline, Content, image, slug }
                     </Link>
                 </div>
                 <div className={cx(BannerStyle.collg4, BannerStyle.colmd8, BannerStyle.imgcircle, BannerStyle.mtlg0, BannerStyle.mt4)}>
-                    <Link href={`/posts/${slug}`} passHref>
+                    <Link href={`/posts/${slug}`}>
                         {/* <img src={image} className={cx(BannerStyle.imgfluid, BannerStyle.radiusimagefull)} style={{ height: '23em' }} alt="client" /> */}
                         <Image src={image} className={cx(BannerStyle.imgfluid, BannerStyle.radiusimagefull)} width={`400`} height={`370`} alt={'Post Image'} />
                         {/* <Image src={image} className={cx(BannerStyle.imgfluid, BannerStyle.radiusimagefull)} height={`23em`} alt={'Post Image'} /> */}

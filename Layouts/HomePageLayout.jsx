@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { Button, Collapse } from 'react-bootstrap'
+import Button from 'react-bootstrap/Button'
+import Collapse from 'react-bootstrap/Collapse'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode, faSearch } from '@fortawesome/free-solid-svg-icons'
 import data from '../FakeData/index.json'
@@ -24,7 +25,12 @@ export default function Header() {
         "Home",
         "Blogs",
         "About Me",
-        "Contact"
+        "Contact",
+    ]
+
+    let moreSections=[
+        "Categories",
+        "Hashtags"
     ]
 
     // To set the useState for opening and closing of the NavMenuBar 
@@ -78,7 +84,7 @@ export default function Header() {
                                     <div className={HeaderStyle.searchbar}>
                                         <form className={HeaderStyle.search} onSubmit={(e) => submitURI(e)}>
                                             <input type="search" className={HeaderStyle.searchinput} onChange={(e) => { query = e.target.value }} name="search" placeholder="Discover Blogs and more" required />
-                                            <FontAwesomeIcon icon={faSearch} size={`1x`} className={HeaderStyle.searchicon} />
+                                            <FontAwesomeIcon icon={faSearch} className={HeaderStyle.searchicon} />
                                         </form>
                                     </div>
 
@@ -93,6 +99,14 @@ export default function Header() {
                                         a++;
                                         return <ExtraLink id={`Navbarid${a}`} curPage={item} pageLink={router.route} />
                                     })}
+                                    <li style={{width: `8em`}} className={cx(HeaderStyle.liDrop, HeaderStyle.navlink, HeaderStyle.navitem)}><a href="#">More Sections</a>
+                                        <ul>
+                                            {moreSections.map(item => {
+                                                a++;
+                                                return <ExtraLink id={`Navbarid${a}`} curPage={item} pageLink={router.route} />
+                                            })}
+                                        </ul>
+                                    </li>
 
                                     {/* To Render the NavLinks to the user Ends Here */}
 

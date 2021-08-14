@@ -7,44 +7,9 @@ import SeoOptimised from '../../../components/Seo/index'
 import { useRouter } from 'next/router';
 
 export const getStaticPaths = async () => {
-    const getTheHashtagRes = await fetch(`${fakeLinks.allHashtag}`)
-    const getTheHashtag = await getTheHashtagRes.json()
-
-
-    let HashtagOnly = getTheHashtag.map(cateogary => cateogary.Hashtag)
-    let HashtagOnly2 = getTheHashtag.map(cateogary => cateogary.Hashtag2)
-    let HashtagOnly3 = getTheHashtag.map(cateogary => cateogary.Hashtag3)
-    let HashtagOnly4 = getTheHashtag.map(cateogary => cateogary.Hashtag4)
-    HashtagOnly4.forEach(blogItem => {
-        if (blogItem !== null && blogItem.length > 0) {
-            if (!Object.values(HashtagOnly).includes(blogItem)) {
-                HashtagOnly.push(blogItem)
-            }
-        }
-    });
-    HashtagOnly3.forEach(blogItem => {
-        if (blogItem !== null && blogItem.length > 0) {
-            if (!Object.values(HashtagOnly).includes(blogItem)) {
-                HashtagOnly.push(blogItem)
-            }
-        }
-    });
-    HashtagOnly2.forEach(blogItem => {
-        if (blogItem !== null && blogItem.length > 0) {
-            if (!Object.values(HashtagOnly).includes(blogItem)) {
-                HashtagOnly.push(blogItem)
-            }
-        }
-    });
-
-    const paths = HashtagOnly.map(CateogaryBlock => ({ params: { hashtag: CateogaryBlock.toString() } }));
-
-
-    // const Headlines = articles.map(article => article.Headline)
-    // const paths = Headlines.map(Headline => ({ params: { post: Headline.toString() } }))
 
     return {
-        paths,
+        paths: [],
         fallback: true
     }
 }

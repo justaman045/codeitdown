@@ -1,108 +1,85 @@
-# Marionette Blog
-![screenshot](screenshot.png)
+# Code It Down
+![screenshot](codeitdown.PNG)
 
-### This blog is built using [Hexo](http://hexo.io).
+### This blog is developed with [Next.js](https://nextjs.org/) and [Django](https://www.djangoproject.com/).<br /><br />
 
-### Topic suggestions
-Please create a new [GitHub issue](https://github.com/marionettejs/blog/issues/new) for topic ideas that you would like us to write about
+## Topic suggestions
+Please write a [E-mail](mailto:coderaman07@gmail.com) to me on which you would like to see the change or any Blog Post or you can directly contact me [here](https://codeitdown.vercel.app/contact) and write your Suggestions.<br /><br />
 
-### Steps to get it running:
+## Steps to get it running:
+<br />
 
-##### 1. Fork this repo
+### 1. Fork this repo and Clone the Repo<br /><br />
 
-##### 2. `npm install`
+### 2. `npm i`<br /><br />
 
-##### 3. To create a new post in markdown: `hexo new draft <filename>`
+### 3. Develop you Own Backend System or Connect it with your personal Favoraite CMS ( I prefer Dev.to and Agility CMS)<br /><br />
 
-##### 4. Edit the file with your file name in this directory: [\_drafts](https://github.com/marionettejs/blog/tree/master/source/_drafts)
+    You can also get a Backend System Developed by me and that will be the same which is being Used in this Blog App<br /><br />
 
-##### 5. Edit your title at top of the file
+### 4. To create a new post Move to the Particular Backend System or CMS whichever you are using and make a new Post over there<br /><br />
 
-##### 6. Add a tag at the top of the file so that it can be filtered, choose from:
-* `tags: news`
-* `tags: notes`
-* `tags: releases`
-* `tags: tutorials (beginner)`
-* `tags: tutorials (intermediate)`
-* `tags: tutorials (advanced)`
-* `tags: behind the scenes`
+### 5. The DB Schema is coming Soon... [ Be Sure to Star this Repo to get Updated ]<br /><br />
 
-*Note: Make sure you add a space after the colon*
+### 6. Add the Cateogary in which your Blog suits the best<br /><br />
 
-##### To add multiple tags:
+### 7. Add a hashtag so that it can be filtered.
 
-    tags:
-    - news
-    - releases
+    Note: Make sure to Add that Hashtag in the Popular Hashtag Table
 
-##### 7. Add your name as the last tag (after the word `by`):
-    tags:
-    - news
-    - by Uncle Bob
+### To add multiple tags:
+
+    Keep on Filling the Entries which is asked from you else just leave the blank ( except the first One)
+
+### 8. Add your name as the last tag (after the word `by`):
+    To Add your Name you have to Edit the Index.json file present in [ components\DataFetching\index.js ]
 
 
-*Note: Make sure you write your name the same way for all posts so it filters correctly (so no Uncle Bob one week and Uncle Bobby the next)*
+    Note: Make sure you Edit Each and Every Detail else It will serve My Data to your Readers<br /><br />
 
+### 9. Turn on the server: `npm run dev` (The Default Port which is being used by Next.js is 3000) ( *If the Default Port is busy with Node.js then do use this command ```npm run dev -- -p 4000```* )<br /><br />
 
-##### 8. To edit a post that has been **published**, edit the file in this directory: [\_posts](https://github.com/marionettejs/blog/tree/master/source/_posts)
+### 10. Preview your Blog at: [localhost:3000](http://localhost:3000)
 
-##### 9. Turn on the server: `hexo s` (if port 5000 is being used already, try `hexo s -p 4000`)
+*If you ran ```npm run dev``` else you have to type the port that you used above*<br /><br />
 
-##### 10. Preview your post at: [localhost:5000](http://localhost:5000)
-
-##### 11. Once you're satisfied with your changes, send a pull request
+### 11. Once you're satisfied with your changes, visit the Blog at the Desired Port or the Default Port
 
 ----
 
-### Steps to go live:
+## Steps to go live:<br /><br />
 
-##### 12. To publish a post (moves a post from [\_drafts](https://github.com/marionettejs/blog/tree/master/source/_drafts) to [\_posts](https://github.com/marionettejs/blog/tree/master/source/_posts) directory): `hexo p <filename>`
+### 12. To Go live You have to Create a Free Account on [Vercel](https://vercel.com/)<br /><br />
 
-##### 13. To generate static files into the `public` folder for hosting: `hexo generate`
+### 13. Then there Create your Project and Connect Your Github Account with Vercel<br /><br />
 
-##### 14. To preview the blog: open the `index.html` file in the `public` folder
+### 14. Hit Next and Sit back and Relax and Vercel will take care of Everything unless you have anything Syntactical Error<br /><br />
 
-##### 15. One time setup:
+### 15. One time setup:
 
-* `cd public`
-* `git init`
-* `git remote add live git@github.com:marionettejs/blog.git`
+* `Change your Domain Name to your dezired domain ( if using a free one like me )`<br /><br />
 
-##### 16. To push to the `gh-pages` branch - NOT MASTER - (this is where [blog.marionettejs.com](http://blog.marionettejs.com) is hosted on GitHub):
-* Make sure you're still in the `public` directory
-* `git add .`
-* `git commit -m 'publish <TITLE>' && git push live master:gh-pages`
+### 16. The Vercel Always takes a Look on your Main/Master branch of the GitHub Repo <br /><br />
 
-### Adding Images
-There's a matching folder with the same name as your post. Save you image(s) in that folder.
+( *So You can Update your Blog ( If you want to ) and push that Update to another Branch and it will still not Break you Blog App* )<br /><br />
 
-##### To link to the image:
+## Adding Images
+To Add Images you must add the Domain Name of the Backend System or the CMS's in next.config.js file else it will not load the Images *( Next.js Security you can also Disable this but it's recommended )*<br /><br />
 
-    ![alt text](/path/to/img.png "Title")
+## Code Highlighting
 
-### Code Highlighting
+### Backtick code block
 
-##### Backtick code block
-
-    ``` [language]
+    ``` 
 
         code snippet
 
     ```
 
-##### More info on formatting: [http://hexo.io/docs/tag-plugins.html](http://hexo.io/docs/tag-plugins.html)
-
-### Disqus Syntax Highlighting
-If you're responding to a comment on Disqus and want syntax highlighting, place your code inside `<pre><code>` tags. For example:
-
-    <pre><code>
-    var foo = 'bar';
-    alert('foo');
-    </code></pre>
 
 
 
-*Happy blogging!*
+## *Happy blogging!*
 
 ***************************
-###### Got questions? Contact [@jdaudier](https://github.com/jdaudier) at [![Gitter chat](https://badges.gitter.im/marionettejs/backbone.marionette.png)](https://gitter.im/marionettejs/backbone.marionette)
+#### Got questions? Contact [@jdaudier](https://github.com/coderaman07) at [Code it Down](https://codeitdown.vercel.app/contact)
