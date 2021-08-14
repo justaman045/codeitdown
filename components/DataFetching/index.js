@@ -10,6 +10,7 @@ if (domainName.isInDevelopement) {
 }
 
 export default fakeLinks = {
+    // Pages Interacting with Backend
     "cateogary": `${serverDomain}/cat/`,
     "recentPost": `${serverDomain}/trending/`,
     "editorsPick": `${serverDomain}/editorsPick/`,
@@ -17,18 +18,20 @@ export default fakeLinks = {
     "popularPosts": `${serverDomain}/popular/`,
     "randomCateogary": `${serverDomain}/random/`,
     "recentBlogPosts": `${serverDomain}/recent/`,
-    "newsletter": `${serverDomain}/newsletter/`,
-    "searchByPost": `${serverDomain}/posts/`,
     "allBlogPost": `${serverDomain}/all/`,
+    "allCategories": `${serverDomain}/allCateogary/`,
+    "allHashtag": `${serverDomain}/hashtagall/`,
+    "searchByPost": `${serverDomain}/posts/`,
+    "getComments": `${serverDomain}/getComments/`,
+    "hashsearch": `${serverDomain}/hashtagsearch/`,
+    "catsearch": `${serverDomain}/catsearch/`,
+    // The Components Interacting with Backend
+    "headsearch": `${serverDomain}/headlinesearch/`,
+    "newsletter": `${serverDomain}/newsletter/`,
     "likeThePost": `${serverDomain}/likes/`,
     "previousPost": `${serverDomain}/prevPost/`,
     "nextPost": `${serverDomain}/nextPost/`,
-    "famousCateogaries": `${serverDomain}/cat/`,
-    "getComments": `${serverDomain}/getComments/`,
-    "commentaPost": `${serverDomain}/comments/`,
     "contact": `${serverDomain}/contact/`,
-    "allHashtag": `${serverDomain}/hashtagall/`,
-    "catsearch": `${serverDomain}/catsearch/`,
-    "hashsearch": `${serverDomain}/hashtagsearch/`,
-    "headsearch": `${serverDomain}/headlinesearch/`,
+    "commentaPost": `${serverDomain}/comments/`,
+    "famousCateogaries": `${serverDomain}/cat/`,
 }

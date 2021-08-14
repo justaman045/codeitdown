@@ -31,8 +31,22 @@ export default function ExtraLink({ curPage, pageLink }) {
         }
     }
     if (curPage === `About Me`) {
-        location = 'About Me';
+        location = 'About';
         link = `/aboutMe`;
+        if (pageLink === link) {
+            activeClass = `${HeaderStyle.active}`;
+        }
+    }
+    if (curPage === `Hashtags`) {
+        location = 'Hashtags';
+        link = `/hashtags`;
+        if (pageLink === link) {
+            activeClass = `${HeaderStyle.active}`;
+        }
+    }
+    if (curPage === `Categories`) {
+        location = 'Categories';
+        link = `/categories`;
         if (pageLink === link) {
             activeClass = `${HeaderStyle.active}`;
         }

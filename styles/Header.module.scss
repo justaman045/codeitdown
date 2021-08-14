@@ -11,6 +11,12 @@ $bg-grey: #0b0d0e;
 $bg-lightgrey: #000;
 $btn-bg: #2a2a2a;
 
+$nav-color: #000000;
+$nav-drop-color: #000000;
+$line-height: 2em;
+$nav-padding: .75em;
+$a-hover: #ffffff;
+
 .container {
   width: 100%;
   padding-right: 15px;
@@ -503,6 +509,49 @@ $btn-bg: #2a2a2a;
     }
   }
 }
+
+
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+  text-decoration: none;
+}
+
+.liDrop{
+      float: left;
+      position: relative;
+      a{
+        color: #b7b7b7;
+      }
+      ul{ 
+        display: none;
+        position: absolute;
+        overflow: auto;
+        width: 17em; /* fix this */
+        border-bottom: 1px solid darken($nav-drop-color, 20%);
+        border-left: 1px solid darken($nav-drop-color, 20%);
+        border-right: 1px solid darken($nav-drop-color, 20%);
+        li{
+          float: none;
+          border-bottom: 1px solid darken($nav-drop-color, 2%);
+        }
+      }
+      &:hover ul{ display: block; }
+    }
+
 .navbarexpandlg {
   .navbarnav {
     .dropdownmenu {
