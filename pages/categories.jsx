@@ -14,7 +14,8 @@ export const getStaticProps = async () => {
     return {
         props: {
             Cateogaries
-        }
+        },
+        revalidate: 60,
     }
 }
 
