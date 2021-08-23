@@ -19,7 +19,7 @@ export default function index({ articles, listcomment }) {
     } else {
         return (
             <>
-                <SeoOptimised curPage={String(articles.Headline)} Description={articles.Content} />
+                <SeoOptimised curPage={String(articles.Headline)} Description={articles.Content} image={articles.Image} />
                 <section className={cx(PostStyle.text11, PostStyle.py5)}>
                     <div className={cx(PostStyle.text11, PostStyle.pylg5, PostStyle.pymd4)}>
                         <div className={PostStyle.container}>
