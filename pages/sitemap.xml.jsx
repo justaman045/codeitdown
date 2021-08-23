@@ -8,6 +8,7 @@ let routeName = [
     `${data.currentDomain}/blogs`,
     `${data.currentDomain}/hashtags`,
     `${data.currentDomain}/categories`,
+    `${data.currentDomain}/contact`,
 ]
 
 let otherSitemaps = [
