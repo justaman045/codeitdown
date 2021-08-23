@@ -18,13 +18,6 @@ const toUrl = (route) =>
         <lastmod> ${route.date}T${route.Time}Z </lastmod>
     </url>`;
 
-const toUrlBase = (routeNameObj) =>
-    `<url>
-        <loc>${routeNameObj}</loc>
-        <changefreq> always </changefreq>
-        <priority> 0.8 </priority>
-    </url>`;
-
 const createSitemap = (urlList) =>
     `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
@@ -33,7 +26,7 @@ const createSitemap = (urlList) =>
     </urlset>`;
 
 export async function getServerSideProps({ res, req }) {
-    const siteMapJson = await fetch(`https://blogx.pythonanywhere.com/all/`);
+    const siteMapJson = await fetch(`https://blogx.pythonanywhere.com/hashtagall/`);
     const urlList = await siteMapJson.json();
     const sitemap = createSitemap(urlList);
     console.log(sitemap)
