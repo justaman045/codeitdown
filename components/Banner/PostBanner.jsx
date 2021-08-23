@@ -4,7 +4,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export default function PostBanner({ Cateogary, Headline, Content, image, slug }) {
-    console.log(slug);
     return (
         <div className={BannerStyle.item}>
             <div className={cx(BannerStyle.row, BannerStyle.sliderinfo)}>
