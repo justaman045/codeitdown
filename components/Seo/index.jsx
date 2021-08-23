@@ -1,7 +1,7 @@
 import data from '../../FakeData/index.json'
 import Head from 'next/head'
 
-export default function SeoOptimised({ curPage, Description }) {
+export default function SeoOptimised({ curPage, Description, image }) {
     let defaultDesc = 'I am a Student Developer who writes Technical Blogs and Develop Quality Products free for everyone.';
     let defaultKeywords = '';
     let desc = '';
@@ -23,6 +23,11 @@ export default function SeoOptimised({ curPage, Description }) {
                 itemProp="description"
             />
             <meta
+                name="keywords"
+                content={String(desc).split(" ")}
+                itemProp="description"
+            />
+            <meta
                 property="og:title"
                 content={`${curPage} | Blogs for Developers | ${data.name}`}
                 itemProp="name"
@@ -39,7 +44,7 @@ export default function SeoOptimised({ curPage, Description }) {
             <meta
                 name="image"
                 property="og:image"
-                content={data.ownerImage}
+                content={image || data.ownerImage}
                 itemProp="image"
             />
             <meta
@@ -60,7 +65,7 @@ export default function SeoOptimised({ curPage, Description }) {
             />
             <meta
                 name="twitter:image"
-                content={data.ownerImage}
+                content={image || data.ownerImage}
             />
         </Head>
     )
