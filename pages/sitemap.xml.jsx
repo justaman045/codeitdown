@@ -8,6 +8,12 @@ let routeName = [
     `${data.currentDomain}/blogs`,
     `${data.currentDomain}/hashtags`,
     `${data.currentDomain}/categories`,
+    `${data.currentDomain}/contact`,
+]
+
+let otherSitemaps = [
+    `${data.currentDomain}/cateogarysitemap.xml`,
+    `${data.currentDomain}/hashtagsitemap.xml`,
 ]
 
 const toUrl = (route) =>
@@ -30,6 +36,7 @@ const createSitemap = (urlList) =>
     <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
     ${routeName.map((routeNameObj) => toUrlBase(routeNameObj)).join("")}
     ${urlList.map((url) => toUrl(url)).join("")}
+    ${otherSitemaps.map((routeNameObj) => toUrlBase(routeNameObj)).join("")}
     </urlset>`;
 
 export async function getServerSideProps({ res, req }) {

@@ -12,7 +12,7 @@ let routeName = [
 
 const toUrl = (route) =>
     `<url>
-        <loc>${domainName}/posts/${route.slug}</loc>
+        <loc>${domainName}/hashtag/${route.Hashtag}</loc>
         <changefreq> daily </changefreq>
         <priority> 1 </priority>
         <lastmod> ${route.date}T${route.Time}Z </lastmod>
@@ -21,7 +21,6 @@ const toUrl = (route) =>
 const createSitemap = (urlList) =>
     `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
-    ${routeName.map((routeNameObj) => toUrlBase(routeNameObj)).join("")}
     ${urlList.map((url) => toUrl(url)).join("")}
     </urlset>`;
 
@@ -29,7 +28,6 @@ export async function getServerSideProps({ res, req }) {
     const siteMapJson = await fetch(`https://blogx.pythonanywhere.com/hashtagall/`);
     const urlList = await siteMapJson.json();
     const sitemap = createSitemap(urlList);
-    console.log(sitemap)
     res.setHeader("Content-Type", "text/xml");
     res.write(sitemap);
     res.end();
