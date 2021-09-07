@@ -10,6 +10,13 @@ export default function SeoOptimised({ curPage, Description, image }) {
     } else {
         desc = Description;
     }
+    let curDate = new Date();
+    let month;
+    if (curDate.getMonth() < 10){
+        month = `0${curDate.getMonth()}`
+    } else {
+        month = `${curDate.getMonth()}`
+    }
     return (
         <Head>
             <title>{curPage} | Blogs for Developers | {data.name}</title>
@@ -20,32 +27,27 @@ export default function SeoOptimised({ curPage, Description, image }) {
             <meta
                 name="description"
                 content={desc}
-                itemProp="description"
             />
             <meta
                 name="keywords"
                 content={String(desc).split(" ")}
-                itemProp="description"
             />
             <meta
                 property="og:title"
                 content={`${curPage} | Blogs for Developers | ${data.name}`}
-                itemProp="name"
             />
             <meta
                 property="og:site_name"
                 content={data.name}
             />
-            <meta property="og:type" content="website" />
+            <meta property="og:type" content="article" />
             <meta
                 property="og:url"
                 content={data.currentDomain}
             />
             <meta
-                name="image"
                 property="og:image"
-                content={image || data.ownerImage}
-                itemProp="image"
+                content={image || 'https://codeitdown.ml'}
             />
             <meta
                 property="og:description"
@@ -65,8 +67,13 @@ export default function SeoOptimised({ curPage, Description, image }) {
             />
             <meta
                 name="twitter:image"
-                content={image || data.ownerImage}
+                content={image || 'https://codeitdown.ml'}
             />
+            <meta name="robots" content="follow, index" />
+            <meta property="og:site_name" content={`${data.name}`} />
+            <meta name="twitter:site" content="https://twitter.com/coderaman07" />
+            <meta property="article:published_time" content={`${curDate.getFullYear()}-${month}-${curDate.getDate()}T00:00:00.000Z`} />
+            <meta property="article:modified_time" content={`${curDate.getFullYear()}-${month}-${curDate.getDate()}T00:00:00.000Z`} />
         </Head>
     )
 }
