@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function CateogaryBlock({ randomCateogary, head, typeOfSection }) {
     let linkToDirect;
     if (typeOfSection === 'cateogary') {
-        linkToDirect = `/cateogary/${String(head).toLocaleLowerCase()}`;
+        linkToDirect = `/cateogary/${String(head)}`;
     }
     if (typeOfSection === 'recent') {
         linkToDirect = '/blogs';
