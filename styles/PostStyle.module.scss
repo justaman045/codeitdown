@@ -1632,9 +1632,24 @@ a.authorimage {
     white-space: pre-wrap;
 
     h1{
-        font-size: 3em;
+        font-size: 3rem;
         font-family: 'Benne', serif;
     }
+    h2{
+        font-size: 2.3rem;
+        font-family: 'Benne', serif;
+    }
+    h3{
+		font-size: 2rem;
+        font-family: 'Benne', serif;
+		font-weight: bold;
+		padding-bottom: 1rem;
+		padding-top: 1rem;
+    }
+	h4{
+		font-size: 1.5rem;
+		font-family: 'Benne', serif;
+	}
     p{
         font-family: 'Baloo Tammudu 2', cursive;
         font-size: 20px;
@@ -1644,4 +1659,24 @@ a.authorimage {
         font-family: 'Baloo Tammudu 2', cursive;
         font-size: 20px;
     }
+	ul{
+		li{
+			&::before{
+				content: "";
+				position: absolute;
+				background-color: #cbd5e0;
+				border-radius: 50%;
+				width: .375em;
+				height: .375em;
+				margin-left: -1rem;
+			}
+			margin-left: 1rem;
+		}
+	}
+}
+
+.organise{
+	li{
+		padding: 0.2rem;
+	}
 }

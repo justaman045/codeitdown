@@ -34,7 +34,7 @@ export default function PostWithContent({ idd, hashtag1, hashtag2, PostHead, has
 
 
                 {/* If one Hashtag is used then the Tags section will be available else it will get disappear */}
-                {hashtag1 && <ul className={cx(PostStyle.column3, PostStyle.tags, PostStyle.m0, PostStyle.p0)}>
+                {hashtag1 && <ul className={cx(PostStyle.column3, PostStyle.tags, PostStyle.m0, PostStyle.p0, PostStyle.organise)}>
                     <li>
                         <p className={cx(PostStyle.m0, PostStyle.mrsm4, PostStyle.mr2)}>Tags :</p>
                     </li>
@@ -50,7 +50,7 @@ export default function PostWithContent({ idd, hashtag1, hashtag2, PostHead, has
                 <ul className={cx(PostStyle.column3, PostStyle.social, PostStyle.m0, PostStyle.p0)}>
                     <li><p className={cx(PostStyle.m0, PostStyle.mrsm4, PostStyle.mr2)}>Share this post :</p></li>
                     {data.facebook && <li><a href={`https://www.facebook.com/sharer/sharer.php?u=${data.currentDomain}/posts/${slug}`} className={PostStyle.facebook}><FontAwesomeIcon icon={faFacebookF} /></a></li>}
-                    {data.twitter && <li><a href={`https://twitter.com/intent/tweet?url=${data.currentDomain}/&text=${msgToPost}`} className={PostStyle.twitter}><FontAwesomeIcon icon={faTwitter} /></a></li>}
+                    {data.twitter && <li><a href={`https://twitter.com/intent/tweet?url=${data.currentDomain}/posts/${slug}&text=${msgToPost}`} className={PostStyle.twitter}><FontAwesomeIcon icon={faTwitter} /></a></li>}
                     {data.linkedin && <li><a href={`https://www.linkedin.com/shareArticle?mini=true&url=${data.currentDomain}/posts/${slug}`} className={PostStyle.linkedin}><FontAwesomeIcon icon={faLinkedinIn} /></a></li>}
                 </ul>
 
