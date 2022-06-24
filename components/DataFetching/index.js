@@ -6,7 +6,7 @@ let serverDomain;
 if (domainName.isInDevelopement) {
     serverDomain = 'http://127.0.0.1:8000'
 } else {
-    serverDomain = 'https://blogx.pythonanywhere.com'
+    serverDomain = 'https://still-crag-49161.herokuapp.com'
 }
 
 export default fakeLinks = {
