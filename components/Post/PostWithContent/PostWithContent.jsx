@@ -1,5 +1,5 @@
 import PostStyle from '../../../styles/PostStyle.module.scss'
-import ReactMarkdown from 'react-markdown'
+import MarkdownView from 'react-showdown';
 import cx from 'classnames'
 import { useState } from 'react';
 import data from '../../../FakeData/index.json'
@@ -26,7 +26,7 @@ export default function PostWithContent({ idd, hashtag1, hashtag2, PostHead, has
 
     return (
         <div className={PostStyle.text11content}>
-            <span><ReactMarkdown className={PostStyle.linebreak}>{PostContent}</ReactMarkdown></span>
+            <span className='test'><MarkdownView markdown={PostContent} className={PostStyle.linebreak} options={{ emoji: true }} /></span>
             <div className={cx(PostStyle.socialshareblog, PostStyle.mt5)}>
                 <ul className={cx(PostStyle.column3, PostStyle.tags, PostStyle.m0, PostStyle.p0)}>
                     <li onClick={() => { likeThePost() }}><button className={PostStyle.btnsmall}>{liked} {likes} times</button></li>

@@ -8,7 +8,7 @@ import data from '../FakeData/index.json'
 
 
 export const getStaticProps = async () => {
-    const HashtagRes = await fetch(`${dataLinks.allHashtag}`)
+    const HashtagRes = await fetch(`${process.env.blogURLPOST}${process.env.allHashtag}`)
     const Hashtag = await HashtagRes.json()
 
     return {

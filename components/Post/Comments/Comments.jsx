@@ -12,7 +12,7 @@ export default function CommentControl({ id, slug, cateogary, PostHead, hashtag1
                     <div className={PostStyle.commentsgrids}>
 
                         {listComments.map(blog => {
-                            return <GetSingleComments key={blog.id} CommentorName={blog.name} CommentMessage={blog.message} date={blog.date} time={blog.Time} />
+                            return <GetSingleComments key={blog.Time} CommentorName={blog.name} CommentMessage={blog.message} date={blog.date} time={blog.Time} />
                         })}
 
                     </div>

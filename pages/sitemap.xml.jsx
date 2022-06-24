@@ -40,7 +40,7 @@ const createSitemap = (urlList) =>
     </urlset>`;
 
 export async function getServerSideProps({ res, req }) {
-    const siteMapJson = await fetch(`https://blogx.pythonanywhere.com/all/`);
+    const siteMapJson = await fetch(`${process.env.blogURLPOST}/all/`);
     const urlList = await siteMapJson.json();
     const sitemap = createSitemap(urlList);
     console.log(sitemap)

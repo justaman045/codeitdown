@@ -7,7 +7,7 @@ import SeoOptimised from '../components/Seo/index'
 
 
 export const getStaticProps = async () => {
-    const cardsRes = await fetch(fakeLinks.allBlogPost)
+    const cardsRes = await fetch(`${process.env.blogURLPOST}${process.env.allBlogPost}`)
     const cardsJSON = await cardsRes.json()
 
     return {

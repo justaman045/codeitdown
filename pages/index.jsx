@@ -24,13 +24,13 @@ export default function Home({ cateogaries, recentPosts, editorsPick, recomended
 
 export const getStaticProps = async () => {
   const [cateogariesRes, recentPostsRes, editorsPickRes, recomendedTopicsRes, popularPostRes, randomCateogaryRes, recentBlogsRes] = await Promise.all([
-    fetch(fakeLinks.cateogary),
-    fetch(fakeLinks.recentPost),
-    fetch(fakeLinks.editorsPick),
-    fetch(fakeLinks.recomendedTopics),
-    fetch(fakeLinks.popularPosts),
-    fetch(fakeLinks.randomCateogary),
-    fetch(fakeLinks.recentBlogPosts),
+    fetch(`${process.env.blogURLPOST}${process.env.cateogary}`),
+    fetch(`${process.env.blogURLPOST}${process.env.recentPost}`),
+    fetch(`${process.env.blogURLPOST}${process.env.editorsPick}`),
+    fetch(`${process.env.blogURLPOST}${process.env.recomendedTopics}`),
+    fetch(`${process.env.blogURLPOST}${process.env.popularPosts}`),
+    fetch(`${process.env.blogURLPOST}${process.env.randomCateogary}`),
+    fetch(`${process.env.blogURLPOST}${process.env.recentBlogPosts}`),
   ])
 
   const [cateogaries, recentPosts, editorsPick, recomendedTopics, popularPosts, randomCateogary, recentBlogs] = await Promise.all([

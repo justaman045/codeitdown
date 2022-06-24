@@ -116,8 +116,8 @@ export const getStaticProps = async (context) => {
     const { post } = context.params;
 
     const [articlesRes, listCommentsRes] = await Promise.all([
-        fetch(`${fakeLinks.searchByPost}${post}/`),
-        fetch(`${fakeLinks.getComments}${post}/`),
+        fetch(`${process.env.blogURLPOST}${process.env.searchByPost}${post}/`),
+        fetch(`${process.env.blogURLPOST}${process.env.getComments}${post}/`),
     ])
 
     const [articles, listcomment] = await Promise.all([

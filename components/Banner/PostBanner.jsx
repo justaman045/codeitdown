@@ -20,7 +20,7 @@ export default function PostBanner({ Cateogary, Headline, Content, image, slug }
                     </Link>
                 </div>
                 <div className={cx(BannerStyle.collg4, BannerStyle.colmd8, BannerStyle.imgcircle, BannerStyle.mtlg0, BannerStyle.mt4)}>
-                    <Link href={`/posts/${slug}`}>
+                    <Link href={`/posts/${slug}`} passHref>
                         {/* <img src={image} className={cx(BannerStyle.imgfluid, BannerStyle.radiusimagefull)} style={{ height: '23em' }} alt="client" /> */}
                         <Image src={image} className={cx(BannerStyle.imgfluid, BannerStyle.radiusimagefull)} width={`400`} height={`370`} alt={'Post Image'} />
                         {/* <Image src={image} className={cx(BannerStyle.imgfluid, BannerStyle.radiusimagefull)} height={`23em`} alt={'Post Image'} /> */}

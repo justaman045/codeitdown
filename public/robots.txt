@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://codeitdown.vercel.app/sitemap.xml
+Sitemap: https://codeitdown.ml/sitemap.xml

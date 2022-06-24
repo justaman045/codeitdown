@@ -97,13 +97,13 @@ export default function Header() {
 
                                     {locationOfNavBar.map(item => {
                                         a++;
-                                        return <ExtraLink id={`Navbarid${a}`} curPage={item} pageLink={router.route} />
+                                        return <ExtraLink key={`Navbarid${a}`} curPage={item} pageLink={router.route} />
                                     })}
                                     <li style={{width: `8em`}} className={cx(HeaderStyle.liDrop, HeaderStyle.navlink, HeaderStyle.navitem)}><a href="#">More Sections</a>
                                         <ul>
                                             {moreSections.map(item => {
                                                 a++;
-                                                return <ExtraLink id={`Navbarid${a}`} curPage={item} pageLink={router.route} />
+                                                return <ExtraLink key={`Navbarid${a}`} curPage={item} pageLink={router.route} />
                                             })}
                                         </ul>
                                     </li>

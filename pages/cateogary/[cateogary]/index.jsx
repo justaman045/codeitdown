@@ -1,7 +1,6 @@
 import cateogaryPage from '../../../styles/cardsPage.module.scss'
 import cx from 'classnames'
 import data from '../../../FakeData/index.json'
-import fakeLinks from '../../../components/DataFetching/index'
 import CardsPage from '../../../components/Card Page/Cards Page';
 import SeoOptimised from '../../../components/Seo/index'
 import { useRouter } from 'next/router';
@@ -22,7 +21,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
     const cateogary = context.params.cateogary;
-    const getTheCateogariesRes = await fetch(`${fakeLinks.catsearch}${cateogary}/`)
+    const getTheCateogariesRes = await fetch(`${process.env.blogURLPOST}${process.env.catsearch}${cateogary}/`)
     const getTheCateogaries = await getTheCateogariesRes.json()
 
     return {
