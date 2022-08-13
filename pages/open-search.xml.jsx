@@ -1,4 +1,4 @@
-import data from '../FakeData/index.json';
+import data from '../Data/index.json';
 const openSearch = () => { };
 const domainName = data.currentDomain;
 

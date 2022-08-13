@@ -1,6 +1,6 @@
 import aboutStyle from '../styles/aboutContent.module.scss';
 import PostStyle from '../styles/Banner.module.scss';
-import data from '../FakeData/index.json';
+import data from '../Data/index.json';
 import cx from 'classnames'
 import SeoOptimised from '../components/Seo';
 import Image from 'next/image'

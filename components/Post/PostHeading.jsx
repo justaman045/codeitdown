@@ -1,6 +1,6 @@
 import cx from 'classnames'
 import PostStyle from '../../styles/PostStyle.module.scss'
-import data from '../../FakeData/index.json'
+import data from '../../Data/index.json'
 import Link from 'next/link'
 
 export default function PostHeadingAndOther({ PostName, date, time, cateogary }) {

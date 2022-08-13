@@ -1,7 +1,7 @@
 import cx from 'classnames'
 import EditorsPickStyle from '../../styles/EditorsPick.module.scss'
 import CardDefault from './EditorsPickCard'
-import data from '../../FakeData/index.json'
+import data from '../../Data/index.json'
 import BannerAdv from './AdvertisementBanner'
 import Topics from './Topics'
 

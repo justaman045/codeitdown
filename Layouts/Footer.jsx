@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode } from '@fortawesome/free-solid-svg-icons'
 import cx from 'classnames'
 import UsefullLink from '../components/Footer/UseFullLinks'
-import fakeData from '../FakeData/index.json'
+import Data from '../Data/index.json'
 import SocialMedia from '../components/Footer/SocialMedia'
 
 function Footer() {
@@ -21,7 +21,7 @@ function Footer() {
                                 {/* Image of the Blog  */}
 
                                 <a className={cx(FooterStyle.navbarbrand, FooterStyle.mb3)} href="/">
-                                    <span><FontAwesomeIcon icon={faCode} /></span> <span> {fakeData["name"]}</span></a>
+                                    <span><FontAwesomeIcon icon={faCode} height={25} /></span> <span> {Data["name"]}</span></a>
 
                                 {/* Image of the Blog  */}
 
@@ -29,7 +29,7 @@ function Footer() {
 
                                 {/* Owner Details with Name and Portfolio Link  */}
 
-                                <h5 className={cx(FooterStyle.mt2, FooterStyle.colorOfText)}>Design by <a href={fakeData["portfolioLink"]}>{fakeData["ownerName"]}</a></h5>
+                                <h5 className={cx(FooterStyle.mt2, FooterStyle.colorOfText)}>Design by <a href={Data["portfolioLink"]}>{Data["ownerName"]}</a></h5>
 
                                 {/* Owner Details with Name and Portfolio Link  */}
 
@@ -81,7 +81,7 @@ function Footer() {
                                     <h6 className={FooterStyle.footertitle28}>Social Media</h6>
                                     <ul className={FooterStyle.socialicons}>
 
-                                        <li className={FooterStyle.github}><p>{fakeData.name} is an Open Source Blog App Designed and Developed by Aman Ojha. You can see the complete Source Code on <code>github.com</code>.</p></li>
+                                        <li className={FooterStyle.github}><p>{Data.name} is an Open Source Blog App Designed and Developed by Aman Ojha. You can see the complete Source Code on <code>github.com</code>.</p></li>
 
                                     </ul>
                                 </div>

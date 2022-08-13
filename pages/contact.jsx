@@ -1,6 +1,6 @@
 import contactStyle from '../styles/contact.module.scss'
 import cx from 'classnames'
-import data from '../FakeData/index.json'
+import data from '../Data/index.json'
 import { useState } from 'react';
 import UseFetchPost from '../components/Transferring Data/UseFetchPost'
 import validator from 'validator';
@@ -72,18 +72,18 @@ export default function contact() {
                                     <div className={contactStyle.mapcontent5}>
                                         <section className={contactStyle.tabcontent}>
                                             <div className={contactStyle.contacttype}>
-                                                <div className={cx(contactStyle.addressgrid, contactStyle.mb4)}>
+                                                {data.address && <div className={cx(contactStyle.addressgrid, contactStyle.mb4)}>
                                                     <h6>Address</h6>
                                                     <p>{data.address}</p>
-                                                </div>
-                                                <div className={cx(contactStyle.addressgrid, contactStyle.mb4)}>
+                                                </div>}
+                                                {data.emailAddress && <div className={cx(contactStyle.addressgrid, contactStyle.mb4)}>
                                                     <h6>Email Address</h6>
                                                     <a href={`mailto:${data.emailAddress}`} className={contactStyle.link1}>{data.emailAddress}</a>
-                                                </div>
-                                                <div className={contactStyle.addressgrid}>
+                                                </div>}
+                                                {data.phone && <div className={contactStyle.addressgrid}>
                                                     <h6>Phone Number</h6>
                                                     <a href={`tel:${data.phone}`} className={contactStyle.link1}>{data.phone}</a>
-                                                </div>
+                                                </div>}
                                             </div>
                                         </section>
                                     </div>

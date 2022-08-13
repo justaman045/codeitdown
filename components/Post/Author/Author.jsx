@@ -1,6 +1,6 @@
 import PostStyle from '../../../styles/PostStyle.module.scss'
 import cx from 'classnames'
-import data from '../../../FakeData/index.json'
+import data from '../../../Data/index.json'
 import Link from 'next/link'
 import Image from 'next/image'
 

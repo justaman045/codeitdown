@@ -1,6 +1,6 @@
 import hashtagPage from '../../../styles/cardsPage.module.scss'
 import cx from 'classnames'
-import data from '../../../FakeData/index.json'
+import data from '../../../Data/index.json'
 import fakeLinks from '../../../components/DataFetching/index'
 import CardsPage from '../../../components/Card Page/Cards Page';
 import SeoOptimised from '../../../components/Seo/index'

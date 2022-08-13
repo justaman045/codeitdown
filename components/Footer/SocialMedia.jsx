@@ -1,16 +1,15 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faTwitter, faFacebookF, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import FooterStyle from '../../styles/Footer.module.scss'
-import fakeData from '../../FakeData/index.json'
+import Data from '../../Data/index.json'
 
 export default function SocialMedia() {
-    let username = fakeData.username
     return (
         <>
-            <li className={FooterStyle.github}><a href={`https://github.com/${username}`}><FontAwesomeIcon icon={faGithub} /> Github</a></li>
-            <li className={FooterStyle.github}><a href={`https://twitter.com/${username}`}><FontAwesomeIcon icon={faTwitter} /> Twitter</a></li>
-            <li className={FooterStyle.github}><a href={`https://linkedin.com/in/${username}`}><FontAwesomeIcon icon={faLinkedinIn} /> LinkedIn</a></li>
-            <li className={FooterStyle.github}><a href={`https://facebook.com/${username}`}><FontAwesomeIcon icon={faFacebookF} /> Facebook</a></li>
+            <li className={FooterStyle.github}><a href={`https://github.com/${Data.username}`}><FontAwesomeIcon icon={faGithub} height={25} /> Github</a></li>
+            <li className={FooterStyle.github}><a href={Data.twitter}><FontAwesomeIcon icon={faTwitter} height={25} /> Twitter</a></li>
+            <li className={FooterStyle.github}><a href={Data.linkedin}><FontAwesomeIcon icon={faLinkedinIn} height={25} /> LinkedIn</a></li>
+            <li className={FooterStyle.github}><a href={Data.facebook}><FontAwesomeIcon icon={faFacebookF} height={25} /> Facebook</a></li>
         </>
     )
 }

@@ -1,4 +1,4 @@
-import data from '../../FakeData/index.json'
+import data from '../../Data/index.json'
 import Link from 'next/link'
 import Image from 'next/image'
 

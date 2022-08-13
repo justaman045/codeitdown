@@ -1,6 +1,6 @@
 import PopularPostStyle from '../../styles/PopularPosts.module.scss'
 import cx from 'classnames'
-import data from '../../FakeData/index.json'
+import data from '../../Data/index.json'
 import PostCard from './Post'
 
 export default function PopularPost({ popularPosts }) {

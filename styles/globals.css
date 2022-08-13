@@ -2110,15 +2110,30 @@ textarea {
 }
  .linebreak h1 {
 	 font-size: 3em;
-	 font-family: 'Benne', serif;
+	 font-family: 'Ubuntu';
 }
  .linebreak p {
-	 font-family: 'Baloo Tammudu 2', cursive;
+	 font-family: 'Ubuntu';
 	 font-size: 20px;
 	 line-height: 1.5em;
 }
  .linebreak li {
-	 font-family: 'Baloo Tammudu 2', cursive;
+	 font-family: 'Ubuntu';
 	 font-size: 20px;
 }
- 
+div div h3{
+	font-family: 'Ubuntu';
+}
+
+section div div div div div div a{
+	font-family: 'Ubuntu';
+}
+section div div div div div div a h1{
+	font-family: 'Ubuntu';
+}
+a{
+	font-family: 'Ubuntu';
+}
+p{
+	font-family: 'Ubuntu';
+}

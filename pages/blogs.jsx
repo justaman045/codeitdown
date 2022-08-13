@@ -1,5 +1,5 @@
 import cx from 'classnames';
-import data from '../FakeData/index.json';
+import data from '../Data/index.json';
 import CardsPage from '../styles/cardsPage.module.scss';
 import fakeLinks from '../components/DataFetching/index';
 import CardsPageCard from '../components/Card Page/Cards Page';

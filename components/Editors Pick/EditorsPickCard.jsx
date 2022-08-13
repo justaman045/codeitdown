@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import CardStyle from '../../styles/EditorsPick.module.scss'
 import cx from 'classnames'
 import Link from 'next/link'
-import data from '../../FakeData/index.json'
+import data from '../../Data/index.json'
 import Image from 'next/image'
 
 export default function CardDefault({ cateogary, PostHead, PostContent, date, time, image, slug }) {
@@ -32,7 +32,7 @@ export default function CardDefault({ cateogary, PostHead, PostContent, date, ti
                                 <Link href={data.portfolioLink}><a className={CardStyle.valName}>{data.ownerName}</a></Link>
                             </li>
                             <li className={cx(CardStyle.metaitem, CardStyle.bloglesson)}>
-                                <span className={CardStyle.metavalue}> {date} </span>. <span className={cx(CardStyle.metavalue, CardStyle.ml2)}><FontAwesomeIcon icon={faClock} /> at {time}</span>
+                                <span className={CardStyle.metavalue}> {date}</span><span className={cx(CardStyle.metavalue, CardStyle.ml2)}><FontAwesomeIcon icon={faClock} height={15} /> at {time}</span>
                             </li>
                         </ul>
                     </div>

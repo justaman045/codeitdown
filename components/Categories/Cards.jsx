@@ -1,4 +1,4 @@
-import data from '../../FakeData/index.json'
+import data from '../../Data/index.json'
 import cardPageStyle from '../../styles/cardsPage.module.scss'
 import cx from 'classnames'
 import Link from 'next/link'

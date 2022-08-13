@@ -2,8 +2,8 @@ import { useState } from 'react'
 import Button from 'react-bootstrap/Button'
 import Collapse from 'react-bootstrap/Collapse'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCode, faSearch } from '@fortawesome/free-solid-svg-icons'
-import data from '../FakeData/index.json'
+import { faCode, faSearch, faBars, faWindowClose } from '@fortawesome/free-solid-svg-icons'
+import data from '../Data/index.json'
 import HeaderStyle from '../styles/Header.module.scss'
 import cx from 'classnames'
 import ExtraLink from '../components/Header/ExtraLinks'
@@ -55,7 +55,7 @@ export default function Header() {
 
                     {/* Logo of the Blog  */}
                     <a className={HeaderStyle.navbarbrand} href="/">
-                        <span><FontAwesomeIcon icon={faCode} /></span> <span style={{ marginTop: '7px', fontSize: 'revert' }}> {data.name}</span></a>
+                        <span><FontAwesomeIcon icon={faCode} /></span> <span style={{ marginTop: '7px' }}> {data.name}</span></a>
 
                     {/* Button to used with the useState to open and close the NavMenu in the Mobile Phones  */}
                     <div>
@@ -69,7 +69,7 @@ export default function Header() {
 
                             {/* Usecase of the useState and also checking the if true then opn the navMenu  */}
 
-                            {open ? <span className={cx(HeaderStyle.fa, HeaderStyle.iconclose, HeaderStyle.fatimes)} /> : <span className={cx(HeaderStyle.fa, HeaderStyle.iconexpand, HeaderStyle.fabars)} />}
+                            {open ? <FontAwesomeIcon icon={faWindowClose} style={{color: `white`}} /> : <FontAwesomeIcon icon={faBars} style={{color: `white`}}></FontAwesomeIcon>}
 
                             {/* Usecase of the useState and also checking the if true then opn the navMenu  */}
 
@@ -84,7 +84,7 @@ export default function Header() {
                                     <div className={HeaderStyle.searchbar}>
                                         <form className={HeaderStyle.search} onSubmit={(e) => submitURI(e)}>
                                             <input type="search" className={HeaderStyle.searchinput} onChange={(e) => { query = e.target.value }} name="search" placeholder="Discover Blogs and more" required />
-                                            <FontAwesomeIcon icon={faSearch} className={HeaderStyle.searchicon} />
+                                            <FontAwesomeIcon icon={faSearch} className={HeaderStyle.searchicon} height={`40%`} />
                                         </form>
                                     </div>
 

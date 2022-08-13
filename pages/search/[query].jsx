@@ -1,7 +1,7 @@
 import PostStyle from '../../styles/PostStyle.module.scss'
 import HeadStyle from '../../styles/cardsPage.module.scss'
 import cx from 'classnames'
-import data from '../../FakeData/index.json'
+import data from '../../Data/index.json'
 import HeadlineSearch from '../../components/Search/Healine Search';
 import { useRouter } from 'next/router'
 import HashtagSearch from '../../components/Search/Hashtag Search';

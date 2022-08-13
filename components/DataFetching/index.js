@@ -1,5 +1,5 @@
 
-import domainName from '../../FakeData/index.json'
+import domainName from '../../Data/index.json'
 
 let fakeLinks;
 let serverDomain;

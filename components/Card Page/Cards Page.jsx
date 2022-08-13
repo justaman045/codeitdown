@@ -1,4 +1,4 @@
-import data from '../../FakeData/index.json'
+import Data from '../../Data/index.json'
 import cardPageStyle from '../../styles/cardsPage.module.scss'
 import cx from 'classnames'
 import Link from 'next/link'
@@ -25,11 +25,11 @@ export default function CardsPage({ image, PostHead, PostContent, date, time, sl
                                 {`${PostContent.substring(0, 200)}...`}
                                 <div className={cx(cardPageStyle.author, cardPageStyle.alignitemscenter, cardPageStyle.mt3, cardPageStyle.mb1)}>
                                     {/* <img src={data.ownerImage} alt={`${data.ownerName}' Image`} className={cx(cardPageStyle.imgfluid, cardPageStyle.roundedcircle)} /> */}
-                                    <Image src={data.ownerImage} className={cx(cardPageStyle.imgfluid, cardPageStyle.roundedcircle)} width={`63`} height={`50`} alt={`${data.ownerName}' Image`} />
+                                    <Image src={Data.ownerImage} className={cx(cardPageStyle.imgfluid, cardPageStyle.roundedcircle)} width={`63`} height={`50`} alt={`${data.ownerName}' Image`} />
                                     <ul className={cardPageStyle.blogmeta}>
                                         <li>
-                                            <Link href={data.portfolioLink}>
-                                                <a>{data.ownerName}</a>
+                                            <Link href={Data.portfolioLink}>
+                                                <a>{Data.ownerName}</a>
                                             </Link>
                                         </li>
                                         <li className={cx(cardPageStyle.metaitem, cardPageStyle.bloglesson)}>

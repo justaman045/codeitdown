@@ -1,4 +1,4 @@
-import data from '../../FakeData/index.json'
+import data from '../../Data/index.json'
 import Head from 'next/head'
 
 export default function SeoOptimised({ curPage, Description, image }) {
@@ -20,6 +20,7 @@ export default function SeoOptimised({ curPage, Description, image }) {
     return (
         <Head>
             <title>{curPage} | Blogs for Developers | {data.name}</title>
+            <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'></link>
             <meta
                 name="viewport"
                 content="width=device-width, initial-scale=1, shrink-to-fit=no"

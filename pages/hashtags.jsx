@@ -4,7 +4,7 @@ import hashtagPage from '../styles/cardsPage.module.scss'
 import SeoOptimised from '../components/Seo'
 import CardsPage from '../components/Hashtags/Cards'
 import cx from 'classnames'
-import data from '../FakeData/index.json'
+import data from '../Data/index.json'
 
 
 export const getStaticProps = async () => {
