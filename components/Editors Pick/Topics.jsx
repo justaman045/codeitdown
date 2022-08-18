@@ -11,10 +11,6 @@ export default function Topics({ url, recomendedTopics }) {
                     return <RecomendedTopic key={item.id} cateogary={item.Cateogary} />
                 })}
             </div>
-            {/* {url && <div className="sponsers mt-5">
-                <h3 className="section-title-left mb-4"> Advertisement</h3>
-                <Addv key={`hello`} />
-            </div>} */}
         </div>
     )
 }

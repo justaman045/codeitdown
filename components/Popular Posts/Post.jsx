@@ -14,8 +14,7 @@ export default function PostCard({ image, PostHead, date, time, slug }) {
                             <a className={PostCardStyle.blogdesc}> {PostHead} </a>
                         </Link>
                         <div className={cx(PostCardStyle.author, PostCardStyle.alignitemscenter)}>
-                            {/* <img src={data.ownerImage} alt='Owner Image' className={cx(PostCardStyle.imgfluid, PostCardStyle.roundedcircle)} /> */}
-                            <Image src={data.ownerImage} alt='Owner Image' width={`63`} height={`50`} className={cx(PostCardStyle.imgfluid, PostCardStyle.roundedcircle)} />
+                            <Image src={data.ownerImage} alt='Owner Image' width={`50`} height={`50`} className={cx(PostCardStyle.imgfluid, PostCardStyle.roundedcircle)} />
                             <ul className={PostCardStyle.blogmeta}>
                                 <li>
                                     <a href={data.portfolioLink}>{data.ownerName}</a>

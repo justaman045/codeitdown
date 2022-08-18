@@ -23,10 +23,10 @@ export default function CardsPage({ image, PostHead, PostContent }) {
                             <a className={cardPageStyle.blogdesc}>{PostHead}</a>
                         </Link>
                         <br />
-                        {`${PostContent.substring(0, 200)}...`}
+                        {`${PostContent.substring(0, 101)}...`}
                         <div className={cx(cardPageStyle.author, cardPageStyle.alignitemscenter, cardPageStyle.mt3, cardPageStyle.mb1)}>
                             {/* <img src={data.ownerImage} alt={`${data.ownerName}' Image`} className={cx(cardPageStyle.imgfluid, cardPageStyle.roundedcircle)} /> */}
-                            <Image src={data.ownerImage} className={cx(cardPageStyle.imgfluid, cardPageStyle.roundedcircle)} width={`63`} height={`50`} alt={`${data.ownerName}' Image`} />
+                            <Image src={data.ownerImage} className={cx(cardPageStyle.imgfluid, cardPageStyle.roundedcircle)} width={`50`} height={`50`} alt={`${data.ownerName}' Image`} />
                             <ul className={cardPageStyle.blogmeta}>
                                 <li>
                                     <Link href={data.portfolioLink}>

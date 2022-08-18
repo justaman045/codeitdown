@@ -21,7 +21,7 @@ export const getStaticProps = async () => {
 
 
 export default function hashtags({ Cateogaries }) {
-    const cateogaryHead = 'All of the Popular and the Best Categories to select from Code it Down';
+    const cateogaryHead = 'All of the Popular and the Best Categories';
     return (
         <>
             <SeoOptimised curPage={`Categories`} Description={cateogaryHead} />

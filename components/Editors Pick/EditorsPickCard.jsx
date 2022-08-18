@@ -13,8 +13,6 @@ export default function CardDefault({ cateogary, PostHead, PostContent, date, ti
                 <div className={cx(CardStyle.cardheader, CardStyle.p0, CardStyle.positionrelative)}>
                     <Link href={`/posts/${slug}`}>
                         <a>
-                            {/* <img className={cx(CardStyle.cardimgbottom, CardStyle.dblock, CardStyle.radiusimagefull)} src={image} style={{ height: `15em` }} alt="Card cap" /> */}
-                            {/* <Image className={cx(CardStyle.cardimgbottom, CardStyle.dblock, CardStyle.radiusimagefull)} layout={`fill`} src={image} alt={'Post Image'} /> */}
                             <Image className={cx(CardStyle.cardimgbottom, CardStyle.dblock, CardStyle.radiusimagefull)} height={`240`} width={`370`} src={image} alt={'Post Image'} />
                         </a>
                     </Link>
@@ -23,10 +21,9 @@ export default function CardDefault({ cateogary, PostHead, PostContent, date, ti
                     <span className={CardStyle.labelblue}><Link href={`/cateogary/${cateogary}`}><a>{cateogary.charAt(0).toUpperCase() + cateogary.slice(1)}</a></Link></span>
                     <br />
                     <Link href={`/posts/${slug}`}><a className={CardStyle.blogdesc}>{PostHead}</a></Link>
-                    <p>{`${PostContent.substring(0, 150)}...`}</p>
+                    <p>{`${PostContent.substring(0, 101)}...`}</p>
                     <div className={cx(CardStyle.author, CardStyle.alignitemscenter, CardStyle.mt3, CardStyle.mb1)}>
-                        {/* <img src={data.ownerImage} alt='' className={cx(CardStyle.imgfluid, CardStyle.roundedcircle)} /> */}
-                        <Image src={data.ownerImage} alt='' width={`63`} height={`50`} className={cx(CardStyle.imgfluid, CardStyle.roundedcircle)} />
+                        <Image src={data.ownerImage} alt='' width={`50`} height={`50`} className={cx(CardStyle.imgfluid, CardStyle.roundedcircle)} />
                         <ul className={CardStyle.blogmeta}>
                             <li>
                                 <Link href={data.portfolioLink}><a className={CardStyle.valName}>{data.ownerName}</a></Link>

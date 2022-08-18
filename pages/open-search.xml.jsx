@@ -7,7 +7,7 @@ const createSitemap = () =>
 <ShortName>${data.name} Search</ShortName>
 <Description>Find posts from ${data.name}.</Description>
 <Contact>${data.emailAddress}</Contact>
-<Url type="text/html" template="${domainName}/{searchTerms}"/>
+<Url type="text/html" template="${domainName}/search/{searchTerms}"/>
 </OpenSearchDescription>`;
 
 export async function getServerSideProps({ res, req }) {

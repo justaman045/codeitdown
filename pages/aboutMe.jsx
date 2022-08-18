@@ -13,14 +13,12 @@ export default function about({ aboutMeCont }) {
             <SeoOptimised curPage={`About Me`} Description={data.githubIntro} key={`coding, blog, react, react js, python, python3, django, restful api, developer, developement, flutter, next, next js, react.js, next.js, python 3, server, deployment, java, javascript, dev, hashnode, blogging, aman, ojha, coder, coderaman, coderaman07, rushx, daysofcode, downthecode, instagram, facebook, portfolio`} />
             <div className={cx(PostStyle.text11, PostStyle.py5)}>
                 <div className={cx(PostStyle.image, PostStyle.mbsm5, PostStyle.mb4, aboutStyle.mt4)}>
-                    {/* <img src={data.ownerImage} className={cx(PostStyle.imgfluid, PostStyle.radiusimagefull, aboutStyle.CustomImage)} alt={data.ownerName} /> */}
-                    <Image src={data.ownerImage} className={cx(PostStyle.ultraMonitor, PostStyle.imgfluid, PostStyle.radiusimagefull)} width={`1312`} height={`800`} layout='responsive' alt={data.ownerName} />
+                    <Image src={data.ownerImage} className={cx(aboutStyle.handleImage, PostStyle.imgfluid, PostStyle.radiusimagefull)} width={`100%`} height={`100%`} layout={'responsive'} alt={data.ownerName} />
                 </div>
                 <div className={PostStyle.container}>
                     <div className={PostStyle.row}>
                         <div className={PostStyle.collg8}>
                             <div className={aboutStyle.aboutContent}>
-                                {/* <span>{aboutMeCont}</span> */}
                                 <span><MarkdownView
                                     markdown={aboutMeCont}
                                     className={aboutStyle.linewrap}

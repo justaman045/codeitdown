@@ -5,6 +5,7 @@ import cx from 'classnames'
 import UsefullLink from '../components/Footer/UseFullLinks'
 import Data from '../Data/index.json'
 import SocialMedia from '../components/Footer/SocialMedia'
+import Link from 'next/link'
 
 function Footer() {
     return (
@@ -78,10 +79,10 @@ function Footer() {
                                     </ul>
                                 </div>
                                 <div className={cx(FooterStyle.colsm4, FooterStyle.col6, FooterStyle.footerlist28, FooterStyle.mtsm0, FooterStyle.mt4)}>
-                                    <h6 className={FooterStyle.footertitle28}>Social Media</h6>
+                                    <h6 className={FooterStyle.footertitle28}>Open nature of {Data.name}</h6>
                                     <ul className={FooterStyle.socialicons}>
 
-                                        <li className={FooterStyle.github}><p>{Data.name} is an Open Source Blog App Designed and Developed by Aman Ojha. You can see the complete Source Code on <code>github.com</code>.</p></li>
+                                        <li className={FooterStyle.github}><p>{Data.name} is an Open Source Blog App Designed and Developed by Aman Ojha. You can see the complete Source Code on <br /><br /><code><Link href={'https://github.com/coderaman07/codeitdown'} passHref><a>github.com/coderaman07/codeitdown</a></Link></code>.</p></li>
 
                                     </ul>
                                 </div>
