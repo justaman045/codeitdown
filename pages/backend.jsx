@@ -3,7 +3,7 @@ import Router from 'next/router'
 
 export default function Backend() {
     useEffect(() => {
-        Router.push(`${process.env.blogURL}/admin`)
+        Router.push(`${process.env.blogURLPOST}/admin`)
     }, []);
     return(null)
 }
