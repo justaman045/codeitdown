@@ -18,7 +18,7 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async (context) => {
     // const getTheHashtagRes = await fetch(`${fakeLinks.cateogary}`)
     const { hashtag } = context.params;
-    const getTheHashtagRes = await fetch(`${process.env.blogURLPOST}${hashtag}/`)
+    const getTheHashtagRes = await fetch(`${process.env.blogURLPOST}/hashtagsearch/${hashtag}/`)
     const getTheHashtag = await getTheHashtagRes.json()
 
     return {
