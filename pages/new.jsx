@@ -1,9 +1,2 @@
-import { useEffect } from "react";
-import Router from 'next/router'
-
-export default function NewBlog() {
-    useEffect(() => {
-        Router.push(`${process.env.blogURLPOST}/new`)
-    }, []);
-    return (null)
-}
+import redirect from 'nextjs-redirect'
+export default redirect(`${process.env.blogURLPOST}/new`)
