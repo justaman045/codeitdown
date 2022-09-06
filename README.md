@@ -9,7 +9,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/coderaman07/codeitdown">
+  <a href="https://github.com/coderaman7/codeitdown">
     <img src="assets/logo.png" alt="Logo" width="350" height="80">
   </a>
 
@@ -18,14 +18,14 @@
   <p align="center">
     This Project is a Personal Blog Platform for someone who is looking to manage everything at their hands. This project cantains every page that a Blog should contain like HomePage, Blog Page, About me Page, Hashtags and Cateogary Page, Contact Page.
     <br />
-    <a href="https://github.com/coderaman07/codeitdown"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/coderaman7/codeitdown"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/coderaman07/codeitdown">View Demo</a>
+    <a href="https://github.com/coderaman7/codeitdown">View Demo</a>
     ·
-    <a href="https://github.com/coderaman07/codeitdown/issues">Report Bug</a>
+    <a href="https://github.com/coderaman7/codeitdown/issues">Report Bug</a>
     ·
-    <a href="https://github.com/coderaman07/codeitdown/issues">Request Feature</a>
+    <a href="https://github.com/coderaman7/codeitdown/issues">Request Feature</a>
   </p>
 </div>
 
@@ -95,7 +95,7 @@ This is a List of Software that should be installed on a system in order to run 
 1. Get a all the enpoints listed in `local.env` and the URL to the backend also
 2. Clone the repo
    ```sh
-   git clone https://github.com/coderaman07/codeitdown.git
+   git clone https://github.com/coderaman7/codeitdown.git
    ```
 3. Install NPM packages
    ```sh
@@ -160,7 +160,7 @@ _For more examples, please refer to the [Documentation](https://codeitdown.verce
 ### To do for this Project
 - [ ] Documentation about the Backend and the URL Endpoints
 
-See the [open issues](https://github.com/coderaman07/codeitdown/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/coderaman7/codeitdown/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -198,7 +198,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Your Name - [@BugsOverflow](https://twitter.com/BugsOverflow) - bugsoverflow@gmail.com
 
-Project Link: [https://github.com/coderaman07/codeitdown](https://github.com/coderaman07/codeitdown)
+Project Link: [https://github.com/coderaman7/codeitdown](https://github.com/coderaman7/codeitdown)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -206,18 +206,18 @@ Project Link: [https://github.com/coderaman07/codeitdown](https://github.com/cod
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/coderaman07/codeitdown.svg?style=for-the-badge
-[contributors-url]: https://github.com/coderaman07/codeitdown/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/coderaman07/codeitdown.svg?style=for-the-badge
-[forks-url]: https://github.com/coderaman07/codeitdown/network/members
-[stars-shield]: https://img.shields.io/github/stars/coderaman07/codeitdown.svg?style=for-the-badge
-[stars-url]: https://github.com/coderaman07/codeitdown/stargazers
-[issues-shield]: https://img.shields.io/github/issues/coderaman07/codeitdown.svg?style=for-the-badge
-[issues-url]: https://github.com/coderaman07/codeitdown/issues
-[license-shield]: https://img.shields.io/github/license/coderaman07/codeitdown.svg?style=for-the-badge
-[license-url]: https://github.com/coderaman07/codeitdown/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/coderaman7/codeitdown.svg?style=for-the-badge
+[contributors-url]: https://github.com/coderaman7/codeitdown/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/coderaman7/codeitdown.svg?style=for-the-badge
+[forks-url]: https://github.com/coderaman7/codeitdown/network/members
+[stars-shield]: https://img.shields.io/github/stars/coderaman7/codeitdown.svg?style=for-the-badge
+[stars-url]: https://github.com/coderaman7/codeitdown/stargazers
+[issues-shield]: https://img.shields.io/github/issues/coderaman7/codeitdown.svg?style=for-the-badge
+[issues-url]: https://github.com/coderaman7/codeitdown/issues
+[license-shield]: https://img.shields.io/github/license/coderaman7/codeitdown.svg?style=for-the-badge
+[license-url]: https://github.com/coderaman7/codeitdown/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/coderaman07
+[linkedin-url]: https://linkedin.com/in/coderaman7
 [product-screenshot]: assets/screen.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
