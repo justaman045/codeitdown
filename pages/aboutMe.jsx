@@ -40,7 +40,7 @@ export const getStaticProps = async () => {
     // console.log(aboutMeCont)
 
     const [aboutMeContRes] = await Promise.all([
-        fetch('https://raw.githubusercontent.com/coderaman07/coderaman07/master/README.md')
+        fetch(`https://raw.githubusercontent.com/${data.username}/${data.username}/master/README.md`)
     ])
 
     var [aboutMeCont] = await Promise.all([
