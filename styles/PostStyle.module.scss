@@ -1630,6 +1630,12 @@ a.authorimage {
 
 .linebreak{
 
+	white-space: pre-line;
+
+	img{
+		width: 37em;
+	}
+
     h1{
         font-size: 200%;
         font-family: 'Ubuntu';
